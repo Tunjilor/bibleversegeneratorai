@@ -1,3 +1,6 @@
+
+<meta name="google-site-verification" content="google-site-verification: googled139fb02f40d1ca6.html" />
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
