@@ -78,111 +78,32 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* Footer */}
         <footer className="border-t border-slate-800 mt-16">
-          <div className="max-w-6xl mx-auto px-6 py-12">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
-              <div>
-                <p className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4">
-                  Popular Topics
-                </p>
-                <ul className="space-y-2">
-                  {[
-                    { href: "/bible-verses-for-anxiety", label: "Anxiety" },
-                    { href: "/bible-verses-for-depression", label: "Depression" },
-                    { href: "/bible-verses-for-strength", label: "Strength" },
-                    { href: "/bible-verses-for-healing", label: "Healing" },
-                    { href: "/bible-verses-for-hope", label: "Hope" },
-                  ].map((l) => (
-                    <li key={l.href}>
-                      <Link
-                        href={l.href}
-                        className="text-sm text-slate-400 hover:text-emerald-400 transition-colors"
-                      >
-                        {l.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4">
-                  More Topics
-                </p>
-                <ul className="space-y-2">
-                  {[
-                    { href: "/bible-verses-for-fear", label: "Fear" },
-                    { href: "/bible-verses-for-forgiveness", label: "Forgiveness" },
-                    { href: "/bible-verses-for-grief", label: "Grief" },
-                    { href: "/bible-verses-for-love", label: "Love" },
-                    { href: "/bible-verses-for-guidance", label: "Guidance" },
-                  ].map((l) => (
-                    <li key={l.href}>
-                      <Link
-                        href={l.href}
-                        className="text-sm text-slate-400 hover:text-emerald-400 transition-colors"
-                      >
-                        {l.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4">
-                  Life Situations
-                </p>
-                <ul className="space-y-2">
-                  {[
-                    { href: "/bible-verses-for-marriage", label: "Marriage" },
-                    { href: "/bible-verses-for-finances", label: "Finances" },
-                    { href: "/bible-verses-for-loneliness", label: "Loneliness" },
-                    { href: "/bible-verses-for-mothers", label: "Mothers" },
-                    { href: "/bible-verses-for-students", label: "Students" },
-                  ].map((l) => (
-                    <li key={l.href}>
-                      <Link
-                        href={l.href}
-                        className="text-sm text-slate-400 hover:text-emerald-400 transition-colors"
-                      >
-                        {l.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div>
-                <p className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-4">
-                  Sister Sites
-                </p>
-                <ul className="space-y-2">
-                  <li>
-                    <a
-                      href="https://faithcompanionai.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-emerald-400 hover:text-emerald-300 font-semibold transition-colors"
-                    >
-                      FaithCompanionAI.com
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://prayergeneratorai.com"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm text-emerald-400 hover:text-emerald-300 font-semibold transition-colors"
-                    >
-                      PrayerGeneratorAI.com
-                    </a>
-                  </li>
-                </ul>
-              </div>
+          <div className="max-w-4xl mx-auto px-6 py-8 flex flex-col items-center gap-4 text-center">
+            <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+              <a
+                href="https://prayergeneratorai.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-slate-400 hover:text-emerald-400 transition-colors"
+              >
+                PrayerGeneratorAI.com
+              </a>
+              <a
+                href="https://bibleversegeneratorai.com"
+                className="text-sm text-slate-400 hover:text-emerald-400 transition-colors"
+              >
+                BibleVerseGeneratorAI.com
+              </a>
+              <a
+                href="https://faithcompanionai.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-slate-400 hover:text-emerald-400 transition-colors"
+              >
+                FaithCompanionAI.com
+              </a>
             </div>
-            <div className="border-t border-slate-800 pt-6 text-center">
-              <p className="text-slate-600 text-sm">
-                © {new Date().getFullYear()} BibleVerseGeneratorAI.com — Free Bible verse tool for
-                everyone.
-              </p>
-            </div>
+            <p className="text-xs text-slate-600">Part of the Faith Companion ecosystem</p>
           </div>
         </footer>
       </body>
