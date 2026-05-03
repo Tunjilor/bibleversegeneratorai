@@ -177,6 +177,15 @@ export default function Home() {
                 >
                   PrayerGeneratorAI.com
                 </a>
+                {" · "}
+                <a
+                  href="https://tithecalculatorai.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald-400 hover:underline"
+                >
+                  TitheCalculatorAI.com
+                </a>
               </p>
             </div>
           </div>
