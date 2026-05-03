@@ -62,6 +62,24 @@ export default function Home() {
           </p>
         </section>
 
+        {/* Social Proof Stats Bar */}
+        <section className="max-w-3xl mx-auto px-6 pb-8">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-6 sm:gap-0 sm:divide-x sm:divide-slate-700">
+            <div className="flex-1 text-center px-6">
+              <p className="text-2xl font-bold text-white">1,000,000+</p>
+              <p className="text-sm text-slate-400 mt-1">Verses Generated</p>
+            </div>
+            <div className="flex-1 text-center px-6">
+              <p className="text-2xl font-bold text-white">Trusted by Christians</p>
+              <p className="text-sm text-slate-400 mt-1">Worldwide</p>
+            </div>
+            <div className="flex-1 text-center px-6">
+              <p className="text-2xl font-bold text-white">100% Free</p>
+              <p className="text-sm text-slate-400 mt-1">to Use</p>
+            </div>
+          </div>
+        </section>
+
         {/* Category Buttons */}
         <section className="max-w-3xl mx-auto px-6 pb-8">
           <p className="text-center text-sm text-slate-400 mb-4 font-medium">Quick select a topic:</p>
